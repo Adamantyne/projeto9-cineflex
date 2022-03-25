@@ -1,0 +1,33 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-width: 375px; 
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+}
+.page{
+    width: 100%;
+    height: 100%;
+    max-width: 375px;
+    min-height: 100vh;
+    padding: 67px 25px 0 25px;
+}
+.description{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    color: #293845;
+}

@@ -1,0 +1,8 @@
+.movie{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 117px;
+}
+.movie img{
+    width: 100px;
+}
