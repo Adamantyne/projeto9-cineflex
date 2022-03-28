@@ -9,6 +9,7 @@ import Description from "./Description";
 import Form from "./Form";
 
 import "./session.css";
+import loading from "../../assets/image/loading.gif"
 
 function Session(props) {
     const { setInfoSuccess } = props;
@@ -67,6 +68,11 @@ function Session(props) {
             });
     }
 
+    if(currentSeats.length===0){
+        return(
+            <section className="loading"><img src={loading} alt="loading" /></section>
+        );
+    }
     return (
         <>
             {currentSeats === "" ? <></> :

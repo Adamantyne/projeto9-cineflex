@@ -1,9 +1,17 @@
 import "./success.css"
 import { Link } from "react-router-dom";
 
+import loading from "../../assets/image/loading.gif"
+
 function Success(props) {
     const { infoSuccess } = props;
     const { title, session, tickets, name, cpf } = infoSuccess;
+
+    if(tickets.length===0){
+        return(
+            <section className="loading"><img src={loading} alt="loading" /></section>
+        );
+    }
     return (
         <section className="page success">
             <div className="description">

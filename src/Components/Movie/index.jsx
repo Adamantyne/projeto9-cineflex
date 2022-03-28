@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import Footer from "../Footer";
 
 import "./movie.css";
+import loading from "../../assets/image/loading.gif"
 
 function Movie() {
     const { movieID } = useParams();
@@ -25,6 +26,11 @@ function Movie() {
     }, []);
 
 
+    if(movie.length===0){
+        return(
+            <section className="loading"><img src={loading} alt="loading" /></section>
+        );
+    }
     return (
         <>
             {movie === "" ? <></> :
@@ -53,6 +59,7 @@ function Movie() {
 
 function DaysMovie(props) {
     const { weekday, date, showtimes } = props;
+
     return (
         <article className="days">
             <p>{weekday} - {date}</p>

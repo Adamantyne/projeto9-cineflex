@@ -4,6 +4,8 @@ import axios from "axios";
 
 import "./home.css";
 
+import loading from "../../assets/image/loading.gif"
+
 function Home() {
     const [movies, setMovies] = useState([]);
     useEffect(() => {
@@ -15,6 +17,12 @@ function Home() {
         });
     }, []);
 
+
+    if(movies.length===0){
+        return(
+            <section className="loading"><img src={loading} alt="loading" /></section>
+        );
+    }
     return (
         <section className="page home">
             <div className="description">
