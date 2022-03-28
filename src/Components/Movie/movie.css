@@ -6,3 +6,34 @@
 .movie img{
     width: 100px;
 }
+.days{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    letter-spacing: 0.02em;
+    font-size: 20px;
+    line-height: 23px;
+    color: #293845;
+}
+.showtimes{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hour{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 83px;
+    height: 43px;
+    background: #E8833A;
+    border-radius: 3px;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    margin:22px 8px 8px 0;
+}

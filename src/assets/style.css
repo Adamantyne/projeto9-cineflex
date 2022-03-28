@@ -3,6 +3,7 @@ body{
 }
 *{
     box-sizing: border-box;
+    text-decoration: none;
 }
 .container{
     width: 100%;

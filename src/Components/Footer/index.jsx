@@ -1,14 +1,14 @@
 import "./footer.css"
 
 function Footer(props) {
-    const{imageURL}=props;
+    const{imageURL, titleMovie, infoMovie}=props;
     return (
         <footer>
             <div>
                 <figure>
                     <img src={imageURL} alt="teste" />
                 </figure>
-                <p>filminho marotoso</p>
+                <p>{titleMovie}<br />{infoMovie}</p> 
             </div>
         </footer>
     );

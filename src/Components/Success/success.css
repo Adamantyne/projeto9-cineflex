@@ -1,0 +1,45 @@
+.success{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    align-items: center;
+}
+.success h2{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    color: #247A6B;
+    text-align: center;
+}
+.purchase-info{
+    width: 100%;
+}
+.success h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    color: #293845;
+    margin:30px 0 10px 0;
+}
+.success p{
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: #293845;
+    margin-bottom: 3px;
+}
+.success button{
+    margin: 50px auto 30px auto;
+    width: 225px;
+    height: 42px;
+    background: #E8833A;
+    border-radius: 3px;
+    border: none;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
